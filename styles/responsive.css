@@ -1,0 +1,190 @@
+@media (max-width: 900px) {
+  /* mobile navigation */
+  #menuBars,
+  #menuClose {
+    display: flex;
+    color: #fff;
+    padding-right: 8%;
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: 0.1s;
+  }
+
+  #menuBars:active,
+  #menuClose:active {
+    color: #6295f3;
+  }
+
+  #menuBars.vanish {
+    display: none;
+  }
+
+  #menuClose {
+    display: none;
+  }
+
+  #menuClose.show {
+    display: flex;
+  }
+
+  .links-container {
+    flex-direction: column;
+    position: absolute;
+    background-color: #000000;
+    top: -500px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    height: max-content;
+    width: 60%;
+    transition: 0.12s ease-in;
+  }
+
+  .links {
+    padding: 15px;
+  }
+
+  .links-container.active {
+    top: 80px;
+  }
+
+  /* section one */
+
+  .row-one {
+    flex-direction: column;
+  }
+
+  .section-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-text {
+    padding-top: 45px;
+  }
+
+  /* section two / Testimonials */
+
+  .section-two_grid {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 20px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .section-2_img {
+    object-position: center;
+    height: 50%;
+  }
+
+  .section-2_column h1,
+  h3,
+  p {
+    text-align: center;
+  }
+
+  .section-2_text h3 {
+    font-size: 2rem;
+  }
+
+  .section-2_column {
+    height: max-content;
+  }
+
+  /* footer */
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer p {
+    padding: 20px;
+  }
+
+  .social-container .fa {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 660px) {
+  .hero-container {
+    top: 23%;
+  }
+
+  .hero-container h1 {
+    white-space: pre-wrap;
+  }
+
+  .hero-container p {
+    line-height: 2rem;
+  }
+
+  .card-menu {
+    flex-direction: column;
+    bottom: -620px;
+    width: 210px;
+  }
+
+  .section-one {
+    padding-top: 650px;
+    
+  }
+
+  .img-container {
+    width: 100%;
+  }
+
+  .section-sub_heading {
+    font-size: 0.8rem;
+  }
+
+  .section-text {
+    width: 80;
+  }
+
+  .section-heading {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+   }
+}
+
+@media (max-width: 480px) {
+  .logo a {
+    font-size: 2.5rem;
+  }
+
+  .logo-icon {
+    height: 2.5rem;
+  }
+
+ 
+
+  .hero-container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .hero-container p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+ 
+}
+
+
+@media (max-width: 370px) {
+  .section-heading {
+    font-size: 1rem;
+  }
+
+  .hero-container h1 {
+    font-size: 2rem;
+  }
+}

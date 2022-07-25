@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  margin-top: 50px;
+  width: 100%;
+  max-width: 1500px;
+  height: 2px;
+  background-color: lightgray;
+}
+
+.header {
+  width: 100%;
+  max-width: 2000px;
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 8, 82, 0.438), rgb(0, 0, 0)),
+    url(../images/banner-2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  max-width: 2000px;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 10px black;
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  z-index: 999;
+}
+
+#menuBars,
+#menuClose {
+  display: none;
+}
+
+.logo {
+  flex: 0.5;
+  display: flex;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: 0.3s;
+}
+
+.logo-icon {
+  height: 50px;
+}
+
+.logo a {
+  font-size: 50px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.06);
+}
+
+.links-container {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 40px;
+  height: 100%;
+}
+
+.links {
+  color: #fff;
+  text-decoration: none;
+  padding: 25px;
+  height: 30px;
+  transition: 0.2s;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.links:hover {
+  background-color: #6295f3;
+}
+
+.links:active {
+  opacity: 0.7;
+  cursor: progress;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-container p {
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+.hero-container h1 {
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.555);
+  white-space: nowrap;
+  padding-bottom: 35px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.hero-btn {
+  padding: 7px;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 3px black;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.hero-btn:hover {
+  transform: scale(1.05);
+  background-color: rgba(98, 149, 243, 0.74);
+}
+
+.hero-btn:active {
+  background-color: rgb(15, 63, 151);
+  box-shadow: 0 0 5px black;
+  cursor: progress;
+}
+
+.card-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.315);
+}
+
+.card-menu a {
+  text-decoration: none;
+  color: #000;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  flex: 1;
+  min-width: 110px;
+  min-height: 170px;
+  height: fit-content;
+  padding: 5px 20px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: rgb(98, 149, 243);
+}
+.card:hover p {
+  color: #000;
+}
+
+.card:active {
+  cursor: progress;
+}
+
+.card-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  padding-bottom: 8px;
+}
+
+.card h1 {
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+
+.card p {
+  text-align: center;
+  padding: 6px;
+  font-size: 14px;
+  color: rgb(98, 111, 124);
+}

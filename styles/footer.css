@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  max-width: 2000px;
+  color: #fff;
+}
+
+.footer p {
+  padding: 40px;
+}
+
+.social-container .fa {
+  color: #de0000;
+  padding: 10px;
+}
